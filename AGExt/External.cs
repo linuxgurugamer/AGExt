@@ -36,7 +36,6 @@ namespace ActionGroupsExtended
 
         public static List<AGXAction> AGXAllActions()//works //all actions on activevessel, returns AGXAction, can other mods even use?
         {
-            print("AGX Call: List all actions for active vessel");
             try
             {
                 return StaticData.CurrentVesselActions;
@@ -50,7 +49,6 @@ namespace ActionGroupsExtended
 
         public static List<AGXAction> AGX2VslAllAssignedActions(uint FlightID) //works //all actions on specific vessel, returns AGXAction, can other mods use this?
         {
-            print("AGX Call: List all assigned actions for vessel " + FlightID);
             if (HighLogic.LoadedSceneIsFlight)
             {
                 if (FlightGlobals.ActiveVessel.rootPart.flightID == FlightID)
@@ -101,7 +99,6 @@ namespace ActionGroupsExtended
 
         public static List<AGXAction> AGXGroupActions(int group) //works //all actions on ActiveVessel in group
         {
-            print("AGX Call: List actions in active vessel in group " + group); //works
             try
             {
                 return StaticData.CurrentVesselActions.FindAll(ag => ag.group == group);
@@ -259,7 +256,6 @@ namespace ActionGroupsExtended
 
         public static bool AGX2VslGroupState(uint FlightID, int group) //8 on test, owrks
         {
-            print("AGX Call: group state for " + group + " for vessel " + FlightID);
             if (HighLogic.LoadedSceneIsFlight)
             {
                 if (FlightGlobals.ActiveVessel.rootPart.flightID == FlightID)
@@ -665,7 +661,6 @@ namespace ActionGroupsExtended
 
         public static bool AGXGroupState(int i) //is a group activated?
         {
-            print("AGX Call: group gtate " + i + " for active vessel");
             if (HighLogic.LoadedSceneIsFlight)
             {
                 try
@@ -742,7 +737,6 @@ namespace ActionGroupsExtended
 
         public static List<PartModule> AGXListOfPartModulesInGroup(int i)
         {
-            print("AGX Call: list of partModules in " + i + " for active vessel");
             if (HighLogic.LoadedSceneIsFlight)
             {
                 List<PartModule> prtList = new List<PartModule>();
@@ -775,7 +769,6 @@ namespace ActionGroupsExtended
 
         public static List<Part> AGXListOfPartsInGroup(int i)
         {
-            print("AGX Call: list of parts in " + i + " for active vessel");
             if (HighLogic.LoadedSceneIsFlight)
             {
                 List<Part> prtList = new List<Part>();
@@ -808,7 +801,6 @@ namespace ActionGroupsExtended
 
         public static Dictionary<int,string> AGXListOfAssignedGroups()
         {
-            print("AGX Call: list of groups with assigned actions");
             if (HighLogic.LoadedSceneIsFlight)
             {
                 Dictionary<int,string> grpList = new Dictionary<int,string>();
@@ -843,7 +835,6 @@ namespace ActionGroupsExtended
 
         public static Dictionary<int,string> AGX2VslListOfAssignedGroups(uint flightID)
         {
-            print("AGX Call: list of groups with assigned actions on vessel " + flightID);
             try
             {
 
