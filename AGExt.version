@@ -1,6 +1,6 @@
 {
   "NAME": "AGExt",
-  "URL": "http://ksp.spacetux.net/avc/AGExt",
+  "URL": "https://raw.githubusercontent.com/linuxgurugamer/AGExt/refs/heads/master/AGExt.version",
   "DOWNLOAD": "https://github.com/linuxgurugamer/AGExt/releases",
   "GITHUB": {
     "USERNAME": "linuxgurugamer",
@@ -10,16 +10,16 @@
     "MAJOR": 2,
     "MINOR": 4,
     "PATCH": 1,
-    "BUILD": 3
+    "BUILD": 4
   },
   "KSP_VERSION_MIN": {
     "MAJOR": 1,
     "MINOR": 12,
     "PATCH": 0
   },
-  "KSP_VERSION_MIN": {
+  "KSP_VERSION_MAX": {
     "MAJOR": 1,
     "MINOR": 12,
-    "PATCH": 0
+    "PATCH": 99
   }
 }
